@@ -6,6 +6,7 @@ let savedSession = null;   // "session_id=xxxxx"
 
 export default defineConfig({
   plugins: [react()],
+  base: './', // Makes CSS/JS paths relative so it works on GitHub Pages
   server: {
     proxy: {
       '/odoo': {
